@@ -1,0 +1,1 @@
+import{j as e}from"./index-CPewfpP0.js";function s({title:t,additionalClassName:r}){return e.jsx("div",{className:`h-16 bg-white ${r} mb-6 mt-8 flex items-center text-black`,children:e.jsx("p",{className:"mx-4 h-[29px] w-[150px] border-b-2 border-red-400 text-left text-xl font-bold",children:t})})}export{s as S};
