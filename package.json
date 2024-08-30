@@ -1,5 +1,5 @@
 {
-    "homepage": "https://mohammadyazbeck.github.io/a-gadget",
+    "homepage": "https://MohammadYazbeck.github.io/a-gadget",
     "name": "a-gadget",
     "private": true,
     "version": "0.0.0",
@@ -9,7 +9,7 @@
         "build": "vite build",
         "lint": "eslint .",
         "predeploy": "npm run build",
-        "deploy": "gh pages -d dist",
+        "deploy": "gh-pages -d dist",
         "start": "vite",
         "preview": "vite preview"
     },
