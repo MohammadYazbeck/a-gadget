@@ -11,7 +11,7 @@ export default function useCartDetails(closeDrawer) {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
-    const totalItmes = useSelector(getTotalCartItems)
+    const totalItems = useSelector(getTotalCartItems)
     const totalQuantity = useSelector(getTotalCartQuantity)
     const totalPrice = useSelector(getTotalCartPrice)
 
@@ -23,5 +23,5 @@ export default function useCartDetails(closeDrawer) {
         }
     }
 
-    return { totalItmes, totalQuantity, totalPrice, handleClickOrder }
+    return { totalItems, totalQuantity, totalPrice, handleClickOrder }
 }
