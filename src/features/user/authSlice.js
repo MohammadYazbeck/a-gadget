@@ -1,11 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
-import supabase from '../../services/supabase'
 
 const initialState = {
     isAuthenticated: false,
     showAuth: false,
 }
-console.log(supabase.auth.session)
 
 const authSlice = createSlice({
     name: 'auth',

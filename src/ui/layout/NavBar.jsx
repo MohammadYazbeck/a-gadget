@@ -15,7 +15,6 @@ export default function NavBar() {
     const showAuth = useSelector((state) => state.auth.showAuth)
     const { logout, status } = useLogout()
 
-    console.log(isAuthenticated, status)
     const isLoading = status === 'pending'
     useCheckAuth()
 
@@ -31,7 +30,7 @@ export default function NavBar() {
                         className="mb-1 flex items-center justify-center text-xl font-bold text-gray-600 sm:mb-0 sm:text-2xl lg:text-[1.7rem]"
                     >
                         <img
-                            src="/images/logo.png"
+                            src="https://plwmolwghzszhrgeoeaq.supabase.co/storage/v1/object/public/App%20Photos/NavBar/logo.png"
                             className="h-[1.4rem] w-[1.3] sm:h-[2rem] sm:w-[2.2rem]"
                         ></img>
                         <span className="ml-1">A</span>
