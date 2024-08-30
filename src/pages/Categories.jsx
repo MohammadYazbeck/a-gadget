@@ -1,4 +1,4 @@
-import FilterOptionButton from '../features/items/FilterOptionButton'
+import FilterOptionButton from '../ui/buttons/FilterOptionButton'
 import FilterdItemList from '../features/items/FilterdItemList'
 import useCategories from '../features/items/useCategories'
 
@@ -13,20 +13,18 @@ export default function Categories() {
         'Furniture',
         'Clothing',
         'Home',
-        'Tools',
-        'Food',
     ]
 
     return (
         <div className="flex h-[100%] flex-col items-center justify-center">
             <div
-                className={`mt-20 grid h-[20%] max-w-[80%] grid-cols-3 gap-0 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8`}
+                className={`mt-32 grid max-w-[80%] grid-cols-3 gap-0 sm:mt-9 sm:grid sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6`}
             >
                 {categories.map((category) => (
                     <FilterOptionButton text={category} key={category} />
                 ))}
             </div>
-            <div className="mt-10 w-[85%] md:w-[70%]">
+            <div className="mt-5 w-[85%] md:w-[70%]">
                 {!isLoading ? (
                     <FilterdItemList items={items} />
                 ) : (

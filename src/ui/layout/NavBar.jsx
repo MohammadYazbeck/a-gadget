@@ -24,7 +24,7 @@ export default function NavBar() {
             {showAuth ? <AuthComponenet /> : null}
             {isLoading ? <Loader /> : null}
             <nav className="fixed z-10 w-full">
-                <div className="flex flex-col items-center justify-around bg-white px-5 py-3 text-lg sm:flex-row sm:px-0 sm:pt-4 sm:text-xl">
+                <div className="flex flex-col items-center justify-around bg-white/85 px-5 py-3 text-lg sm:flex-row sm:px-0 sm:pt-4 sm:text-xl">
                     <NavLink
                         to="./"
                         className="mb-1 flex items-center justify-center text-xl font-bold text-gray-600 sm:mb-0 sm:text-2xl lg:text-[1.7rem]"

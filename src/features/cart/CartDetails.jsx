@@ -2,23 +2,24 @@ import OrderButton from '../../ui/buttons/OrderButton'
 import useCartDetails from './useCartDetails'
 
 export default function CartDetails({ closeDrawer }) {
-    const { totalItmes, totalQuantity, totalPrice, handleClickOrder } =
+    const { totalItems, totalQuantity, totalPrice, handleClickOrder } =
         useCartDetails(closeDrawer)
+
     return (
-        <div className="mt-4 flex flex-col font-bold text-black">
-            <div className="m-1 flex items-center justify-between border-b">
+        <div className="flex flex-col p-4 font-bold text-black">
+            <div className="flex items-center justify-between border-b py-2">
                 <p>Total Items:</p>
-                <p>{totalItmes}</p>
+                <p>{totalItems}</p>
             </div>
-            <div className="m-1 flex items-center justify-between border-b">
+            <div className="flex items-center justify-between border-b py-2">
                 <p>Total Quantity:</p>
                 <p>{totalQuantity}</p>
-            </div>{' '}
-            <div className="m-1 flex items-center justify-between border-b">
+            </div>
+            <div className="flex items-center justify-between border-b py-2">
                 <p>Total Price:</p>
                 <p className="text-xl text-green-600">${totalPrice}</p>
             </div>
-            <div className="mt-2 flex items-center justify-center">
+            <div className="mt-4 flex justify-center">
                 <OrderButton onClick={handleClickOrder} text="Order Now" />
             </div>
         </div>

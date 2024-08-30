@@ -5,7 +5,7 @@ import TrendingItemList from '../features/items/TrendingItemList'
 
 export default function HomePage() {
     return (
-        <div className="text-bl flex flex-col items-center justify-center pt-20">
+        <div className="flex flex-col items-center justify-center pt-28 sm:pt-20">
             <HomeMain />
             <SectionTitle
                 title="Popular Items"

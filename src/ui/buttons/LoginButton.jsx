@@ -6,7 +6,7 @@ export default function LoginButton() {
     return (
         <button
             onClick={() => dispatch(toggleShowAuth())}
-            className="h ml-4 h-9 w-24 rounded-full border border-gray-600 font-semibold hover:border-red-400 hover:text-red-400 sm:text-lg"
+            className="h ml-4 h-8 w-24 rounded-full border border-gray-600 font-semibold hover:border-red-400 hover:text-red-400 sm:h-9 sm:text-lg"
         >
             Login
         </button>

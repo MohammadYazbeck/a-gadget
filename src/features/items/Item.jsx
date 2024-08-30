@@ -29,7 +29,7 @@ export default function Item({ item, additionalClassname }) {
                 )}
             </div>
 
-            <div className="ml-4 mr-auto mt-5 flex h-20 flex-col border-t pt-2">
+            <div className="ml-4 mr-auto mt-5 flex h-20 flex-col border-t pt-2 text-sm sm:text-base lg:text-lg">
                 <p className="font-bold uppercase">{item.name}</p>
                 <p className="mt-1 text-sm">
                     <span className="font-bold">Category: </span>

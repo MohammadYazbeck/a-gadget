@@ -28,10 +28,10 @@ export default function Cart() {
                 <Card
                     color="transparent"
                     shadow={false}
-                    className="px- h-[calc(100vh-2rem)] w-full cursor-default"
+                    className="flex h-full w-full"
                 >
-                    <div className="flex-col items-center justify-center p-4">
-                        <div className="fixed top-0 z-20 flex w-full items-center bg-white py-8">
+                    <div className="flex h-full flex-col">
+                        <div className="flex items-center justify-start bg-white p-4">
                             <button onClick={closeDrawer}>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export default function Cart() {
                                     viewBox="0 0 24 24"
                                     strokeWidth={2.5}
                                     stroke="currentColor"
-                                    className="size-5"
+                                    className="h-6 w-6"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -48,23 +48,28 @@ export default function Cart() {
                                     />
                                 </svg>
                             </button>
-                            <h1 className="ml-4 w-[7rem] border-b-2 border-red-400 text-left text-2xl font-semibold">
+                            <h1 className="ml-4 border-b-2 border-red-400 text-2xl font-semibold">
                                 CART
                             </h1>
                         </div>
+
                         {cart.length === 0 && (
-                            <p className="flex items-center justify-center text-base font-semibold text-gray-400">
-                                You cart is empty!
+                            <p className="flex flex-grow items-center justify-center text-base font-semibold text-gray-400">
+                                Your cart is empty!
                             </p>
                         )}
-                        <div className="no-scrollbar mt-20 h-[47rem] w-full overflow-y-scroll border-b-4 px-5">
-                            {cart.length > 0 &&
-                                cart.map((item) => (
-                                    <CartItem item={item} key={item.id} />
-                                ))}
-                        </div>
+
                         {cart.length > 0 && (
-                            <CartDetails closeDrawer={closeDrawer} />
+                            <div className="flex h-full flex-col justify-between">
+                                <div className="no-scrollbar h-[20rem] flex-grow overflow-y-auto px-5">
+                                    {cart.map((item) => (
+                                        <CartItem item={item} key={item.id} />
+                                    ))}
+                                </div>
+                                <div className="bg-white p-4">
+                                    <CartDetails closeDrawer={closeDrawer} />
+                                </div>
+                            </div>
                         )}
                     </div>
                 </Card>
