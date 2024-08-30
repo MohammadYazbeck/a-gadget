@@ -1,1 +1,0 @@
-import{j as e}from"./index-GOuHS48l.js";function s({title:t,additionalClassName:r}){return e.jsx("div",{className:`${r} mb-10 mt-10 flex items-center text-black`,children:e.jsx("p",{className:"mx-4 h-[29px] w-[150px] border-b-2 border-red-400 text-left text-xl font-bold",children:t})})}export{s as S};
