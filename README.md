@@ -81,5 +81,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 If you have any questions or suggestions, feel free to reach out via mohammadyazbeckk@gmail.com.
 
 ---
-
-You can now copy and paste this into your `README.md` file.
